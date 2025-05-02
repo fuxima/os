@@ -1,3 +1,5 @@
 ^os\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
+^^data-raw$$
+^^backup$$
