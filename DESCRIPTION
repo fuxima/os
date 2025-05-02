@@ -1,0 +1,16 @@
+Package: os
+Title: Overall Survival Analysis Toolkit
+Version: 0.1.0.9000
+Authors@R: 
+    person("Fuxi", "Ma", , "fuxi.ma@outlook.com", role = c("aut", "cre"))
+Description: Tools for simulating and analyzing survival data with Kaplan-Meier plots.
+License: MIT
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+LazyData: true
+Imports:
+    survival,
+    dplyr
+Suggests:
+    testthat,
+    survminer
