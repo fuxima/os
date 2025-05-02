@@ -14,3 +14,5 @@ Imports:
 Suggests:
     testthat,
     survminer
+URL: https://github.com/fuxima/os
+BugReports: https://github.com/fuxima/os/issues
