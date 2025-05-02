@@ -2,13 +2,16 @@
 % Please edit documentation in R/plotting.R
 \name{plot_survival}
 \alias{plot_survival}
-\title{Plot survival curves}
-\usage{
-plot_survival(fit)
-}
+\title{Plot Survival}
 \arguments{
-\item{fit}{survfit object}
+\item{fit}{survfit object from analyze_survival()}
+}
+\value{
+A ggsurvplot object
 }
 \description{
 Plot survival curves
+}
+\details{
+Creates Kaplan-Meier plots with confidence intervals
 }

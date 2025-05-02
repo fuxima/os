@@ -1,11 +1,15 @@
 #' Plot survival curves
 #'
-#' @param fit survfit object
+#' Creates Kaplan-Meier plots with confidence intervals
+#'
+#' @title Plot Survival
+#' @name plot_survival
+#' @param fit survfit object from analyze_survival()
+#' @return A ggsurvplot object
 #' @export
+#' @importFrom survminer ggsurvplot
+NULL  # Add this line if you have other survminer imports
+
 plot_survival <- function(fit) {
-  survminer::ggsurvplot(fit,
-                        conf.int = TRUE,
-                        pval = TRUE,
-                        risk.table = TRUE,
-                        xlab = "Time (years)")
+  survminer::ggsurvplot(fit)  # Explicit namespace reference
 }

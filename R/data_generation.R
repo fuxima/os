@@ -1,7 +1,13 @@
 #' Generate synthetic survival data
+#'
+#' Creates a dataset with simulated survival times and covariates
+#'
+#' @title Generate Survival Data
+#' @name generate_survival_data
 #' @param n Number of patients (default: 300)
-#' @return Dataframe with survival data
+#' @return A data.frame with columns: patient_id, time_days, time_years, status, sex, age
 #' @export
+#' @importFrom stats rweibull rbinom rnorm
 generate_survival_data <- function(n = 300) {
   set.seed(123)
   df <- data.frame(

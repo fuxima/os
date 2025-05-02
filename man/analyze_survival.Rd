@@ -2,15 +2,19 @@
 % Please edit documentation in R/survival_analysis.R
 \name{analyze_survival}
 \alias{analyze_survival}
-\title{Run survival analysis}
+\title{Analyze Survival}
 \usage{
-analyze_survival(data, time_var = "time_days")
+analyze_survival(data)
 }
 \arguments{
-\item{data}{Input data}
-
-\item{time_var}{Time variable (in days)}
+\item{data}{Input data.frame from generate_survival_data()}
+}
+\value{
+A survfit object
 }
 \description{
-Run survival analysis
+Perform survival analysis
+}
+\details{
+Fits Kaplan-Meier survival curves by sex
 }

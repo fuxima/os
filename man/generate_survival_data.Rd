@@ -2,7 +2,7 @@
 % Please edit documentation in R/data_generation.R
 \name{generate_survival_data}
 \alias{generate_survival_data}
-\title{Generate synthetic survival data}
+\title{Generate Survival Data}
 \usage{
 generate_survival_data(n = 300)
 }
@@ -14,4 +14,7 @@ A data.frame with columns: patient_id, time_days, time_years, status, sex, age
 }
 \description{
 Generate synthetic survival data
+}
+\details{
+Creates a dataset with simulated survival times and covariates
 }
